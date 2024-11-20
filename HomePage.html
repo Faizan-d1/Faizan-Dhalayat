@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    /* Header Styles */
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .header nav {
+      display: flex;
+      gap: 15px;
+    }
+    .header nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Banner Styles */                                                   
+    .banner {
+      background-color:blanchedalmond;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .banner h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    /* Categories Section */
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #fff;
+    }
+    .categories .category {
+      text-align: center;
+    }
+    .categories .category img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+    .categories .category img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Featured Products Section */
+    .featured {
+      padding: 20px;
+    }
+    .featured h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .products {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .product-card { 
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+      width: 250px;
+      transition: box-shadow 0.3s;
+    }
+    .product-card:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    .product-card img {
+      width: 100%;
+      height: 370px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .product-card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .product-card p {
+      color: #555;
+      font-size: 14px;
+    }
+    .product-card button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .product-card button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">ANFS'Shop</div>
+    <nav>
+      <a href="HomePage.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="Aboutus.html">About</a>
+      <a href="contacts.html">Contact</a>
+      <a href="LOGIN.html">Login</a>
+    </nav>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1 style="color:black;">Welcome to ANFS'Shop</h1>
+  </div>
+
+  <!-- Categories Section -->
+  <div class="categories">
+    <div class="category">
+      <img src="headphone.webp" alt="Men">
+      <p><a href="men'sCollection.html">Men's Collection </a></p>
+    </div>
+    <div class="category">
+      <img src="Jacket1.3rd.jpg" alt="Women">
+      <p><a href="">Women's Collection</a></p>
+    </div>
+    <div class="category">
+      <img src="home and Living.webp" alt="Home & Living">
+      <p><a href="">Home & Living </a></p>
+    </div>
+  </div>
+
+  <!-- Featured Products Section -->
+  <div class="featured">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="Shacket.avif" alt="Product 1">
+        <h3>Mast & Harbour 
+          Premium Cotton Shacket 
+          Special price</h3>
+        <p>₹1299</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="blackjacket.webp" alt="Product 2">
+        <h3>HIGHLANDER 
+            Men Solid Puffer Jacket
+            Special price</h3>
+        <p>₹1999</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="greenSweatshirt.avif" alt="Product 3">
+        <h3>ROADSTER 
+            Men Solid Green Sweatshirt
+            Special price</h3>
+        <p>₹999</p>
+        <button>Add to Cart</button>
+        
+         
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2024 ShopEase. All rights reserved.</p>
+  </div>
+</body>
+</html>
